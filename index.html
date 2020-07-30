@@ -136,6 +136,7 @@
 <!-- Main -->
 <div class="main__container">
     <div class="main__nav__container">
+
         <div class="main__nav__chat_menu">
             <div class="chat__picture">
                 <img src="assets/img/itacadem.jpg" alt="">
@@ -159,27 +160,13 @@
                         </svg>
                     </span>
                 </h5>
-                <p class="font__mini">Alexei Kolesnikov</p>
-                <a class="rounded_bg" href="#">
+                <p class="font__mini"><i style="color:#2bac76; font-size: 75%;" class="fas fa-circle"></i>Alexei Kolesnikov</p>
+                <a onfocus="this.blur()" class="rounded_bg" href="#">
                     <svg class="big__icon">
                         <use xlink:href="#new_message"></use>
                     </svg>
                 </a>
             </div><!-- /.user__information-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <div class="frequently__search">
                 <a href="#">
                     <i class="far fa-comment-dots fa-flip-horizontal"></i>Theads
@@ -187,12 +174,103 @@
                 <a href="#">
                     <i class="fas fa-at"></i>Mentions & reactions
                 </a>
-                <a a onfocus="this.blur()" class="show_more" href="#">
+                <a onfocus="this.blur()" class="expand" href="#">
                     <i class="fas fa-arrow-down"></i>Show more
                 </a>
             </div><!-- /.frequently__search -->
-            <div class="chats">channels</div>
+            <div class="nav__channels">
+                <a onfocus="this.blur()" class="expand" href="#">
+                    <i class="fas fa-caret-down"></i>Channels
+                </a>
+                <a href="#">
+                    <i class="fas fa-hashtag"></i>general
+                </a>
+                <a href="#">
+                    <i class="fas fa-hashtag"></i>questions
+                </a>
+                <a href="#">
+                    <i class="fas fa-hashtag"></i>random
+                </a>
+                <a href="#">
+                    <i class="fas fa-hashtag"></i>task1
+                </a>
+            </div> <!--/.nav__channels-->
+            <div class="nav__direct">
+                <a onfocus="this.blur()" class="expand" href="#">
+                    <i class="fas fa-caret-down"></i>Direct messages
+                </a>
+                <a href="#">
+                    <i style="color:#2bac76; font-size: 75%;" class="fas fa-heart"></i>SlackBot
+                </a>
+                <a href="#">
+                    <i style="color:#2bac76; font-size: 75%;" class="fas fa-circle"></i>Alexei Kolesnikov
+                </a>
+            </div> <!--/.nav__direct-->
         </div><!-- /.main__nav__navigation -->
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="main__chat__window">
+
+            <div class="message__container">
+                <div class="avatar__container">
+                    <a href="#"><img class="avatar__photo" src="assets/img/avatar-1.jpg" alt=""></a>
+                </div>
+                <div class="content__contaner">
+                    <div class="name">Ivanov Ivan</div>
+                    <div class="time">10:06 AM</div>
+                    <p class="message">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum orci id odio maximus posuere. Nulla eget risus euismod purus ornare dignissim. Ut interdum ligula id ultrices facilisis
+                    </p>
+                    <div class="message__option">
+                        <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-2.jpg" alt=""></a>
+                        <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-3.jpg" alt=""></a>
+                        <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-4.jpg" alt=""></a>
+                        <a class="replies" href="#">3 replies</a>
+                        <div class="last__reply">
+                            Last reply 3 days ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+
+
+        </div> <!--/.main__chat__window-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="details">
+            details
+        </div>
     </div><!-- /.nav__container -->
 </div><!-- /.main__container -->
 
