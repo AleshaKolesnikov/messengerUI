@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #949297;
+    background-color: #121016;
+}
+*, :before, :after{
+    box-sizing: border-box;
+}
+p, h5{
+    margin: 0;
+    padding: 0;
+}
+
+/* Fonts
+========================== */
+.font__mini{
+    padding: 5px;
+    font-size: 10px;
+}
+
+/* Container
+========================== */
+.container{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Header
+========================== */
+
+.header{
+padding: 0px 0;
+border-bottom: 1px solid #2c2f34;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Buttons and Icons
+========================== */
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    transition: background .1s linear;   
+}
+.btn:hover{
+    background-color: #353439;
+}
+.btn.close:hover{
+    background-color: red;
+}
+.btn:hover .icon{
+    fill: #abaaad;
+}
+.icon{
+    fill: #38373c;
+    display: block;
+    height: 18px;
+    transition: fill .1s linear;
+}
+.mini__icon{
+    fill: #949297;
+    background-size: 12px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    padding: 2px;
+    }
+
+.rounded_bg{
+    /* display: flex;
+    border: 5px solid #d1d2d3;
+    box-shadow: 0 0 0px 5px #d1d2d3 inset;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    bottom: 10px; */
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 40px; 
+    text-align: center; 
+    background: #d1d2d3;
+    overflow: hidden;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    /* bottom: 10px; */
+}
+    
+.big__icon{
+    /* background-color: #d1d2d3;
+    fill: #38373c;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: #d1d2d3;
+    fill: #38373c;
+    width: 20px;
+    height: 20px;
+    }
+
+/* Input
+========================== */
+
+input{
+    width: 33%;
+    height: 20px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #424145;
+    border-radius: 4px;
+    background-color: #1f1e23;
+    color: #adaeb0;
+}
+input[type=search]:hover{
+    border: 1px solid #727175;
+}
+input[type=search]:hover::placeholder{
+    color: #d1d2d3;
+}
+input[type=search]:focus{
+    outline: none;
+}
+
+/* Main
+========================== */
+.main__container{
+    display: flex;
+    background-color: #19171d;
+    height: 90vh;
+}
+
+/* Navigation
+========================== */
+.main__nav__container{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+/* Chat choiser
+========================== */
+.main__nav__chat_menu{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #2b2a30;
+    flex: 0 0 50px;
+}
+.chat__picture{
+    display: flex;
+    justify-content: left;
+    width: 0 0 30%;
+    padding: 10px;
+}
+
+/* IMG
+========================== */
+.chat__picture  img{
+    border: 4px solid #19171d;
+    border-radius: 10px;
+}
+
+.chat__picture img:hover{
+    box-shadow: 0 0 0px 4px #504f54;
+}
+.chat__picture img:focus{
+    box-shadow: 0 0 0px 4px #d1d2d3;
+}
+
+/* Navigation__Menu
+========================== */
+.main__nav__navigation{
+    flex: 0 0 300px;
+    border-right: 1px solid #2b2a30;
+    flex-direction: column;
+
+}
+.user__information{
+    padding: 10px;
+    height: 50px;
+    border-bottom: 1px solid #2b2a30;
+    position: relative;
+}
+.user__information:hover{
+   background-color: #27242c;
+}
+
+/* Frequently__search
+========================== */
+.frequently__search{
+   padding: 10px 0px;
+   border-bottom: 1px solid #2b2a30;
+}
+
+.frequently__search a{
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.frequently__search i{
+    margin: 0px 10px;
+    margin-top: 3px;
+}
+
+.frequently__search a:hover{
+    background-color: #27242c;
+    color: #919193;
+}
+
+.frequently__search a.show_more:hover{
+    background-color: inherit;
+    color: #d1d2d3;
+}
+
+.frequently__search a:focus{
+    background-color: #1164a3;
+    color: #ffffff;
+}
+
+.frequently__search a.show_more:focus{
+    background-color: inherit;
+    color: #d1d2d3;
+}
+
