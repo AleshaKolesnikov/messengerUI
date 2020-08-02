@@ -81,58 +81,62 @@
         <path d="m370.589844 250.972656c-5.523438 0-10 4.476563-10 10v88.789063c-.019532 16.5625-13.4375 29.984375-30 30h-280.589844c-16.5625-.015625-29.980469-13.4375-30-30v-260.589844c.019531-16.558594 13.4375-29.980469 30-30h88.789062c5.523438 0 10-4.476563 10-10 0-5.519531-4.476562-10-10-10h-88.789062c-27.601562.03125-49.96875 22.398437-50 50v260.59375c.03125 27.601563 22.398438 49.96875 50 50h280.589844c27.601562-.03125 49.96875-22.398437 50-50v-88.792969c0-5.523437-4.476563-10-10-10zm0 0"/><path d="m376.628906 13.441406c-17.574218-17.574218-46.066406-17.574218-63.640625 0l-178.40625 178.40625c-1.222656 1.222656-2.105469 2.738282-2.566406 4.402344l-23.460937 84.699219c-.964844 3.472656.015624 7.191406 2.5625 9.742187 2.550781 2.546875 6.269531 3.527344 9.742187 2.566406l84.699219-23.464843c1.664062-.460938 3.179687-1.34375 4.402344-2.566407l178.402343-178.410156c17.546875-17.585937 17.546875-46.054687 0-63.640625zm-220.257812 184.90625 146.011718-146.015625 47.089844 47.089844-146.015625 146.015625zm-9.40625 18.875 37.621094 37.625-52.039063 14.417969zm227.257812-142.546875-10.605468 10.605469-47.09375-47.09375 10.609374-10.605469c9.761719-9.761719 25.589844-9.761719 35.351563 0l11.738281 11.734375c9.746094 9.773438 9.746094 25.589844 0 35.359375zm0 0"/>
     </symbol>
 </svg>
-
 <!-- Header -->
 <header class="header">
     <div class="container">
         <div class="header__inner">
-            <a title="Menu" class="btn" href="#">
-                <svg class="icon">
-                    <use xlink:href="#menu"></use>
-                </svg>
-            </a>
-            <a title="Previous" class="btn" href="#">
-                <svg class="icon">
-                    <use xlink:href="#previous"></use>
-                </svg>
-            </a>
-            <a title="Next" class="btn" href="#">
-                <svg class="icon">
-                    <use xlink:href="#next"></use>
-                </svg>
-            </a>
-            <a title="History" class="btn" href="#">
-                <svg class="icon">
-                    <use xlink:href="#history"></use>
-                </svg>
-            </a>
-            <!-- TODO -->
-            <input type="search" name="search" placeholder="Search Ais">
-            <!-- TODO -->
-            <a title="Help" class="btn" href="#">
-                <svg class="icon">
-                    <use xlink:href="#help"></use>
-                </svg>
-            </a>
-            <a title="Minimize" class="btn" href="#">
-                <svg class="icon">
-                    <use xlink:href="#minimize"></use>
-                </svg>
-            </a>
-            <a title="Maximize" class="btn" href="#">
-                <svg class="icon">
-                    <use xlink:href="#maximize"></use>
-                </svg>
-            </a>
-            <a title="Exit" class="btn  close" href="#">
-                <svg class="icon">
-                    <use xlink:href="#exit"></use>
-                </svg>
-            </a>
+            <div class="left__icons">
+                <a title="Menu" class="btn" href="#">
+                    <svg class="icon">
+                        <use xlink:href="#menu"></use>
+                    </svg>
+                </a>
+            </div><!--/.left__icons-->
+            <div class="center__icons">
+                    <a title="Previous" class="btn" href="#">
+                        <svg class="icon">
+                            <use xlink:href="#previous"></use>
+                        </svg>
+                    </a>
+                    <a title="Next" class="btn" href="#">
+                        <svg class="icon">
+                            <use xlink:href="#next"></use>
+                        </svg>
+                    </a>
+                    <a title="History" class="btn" href="#">
+                        <svg class="icon">
+                            <use xlink:href="#history"></use>
+                        </svg>
+                    </a>
+                    <!-- TODO -->
+                    <input type="search" name="search" placeholder="Search Ais">
+                    <!-- TODO -->
+            </div><!--/.center__icons-->
+            <div class="right__icons">
+                <a title="Help" class="btn" href="#">
+                    <svg class="icon">
+                        <use xlink:href="#help"></use>
+                    </svg>
+                </a>
+                <a title="Minimize" class="btn" href="#">
+                    <svg class="icon">
+                        <use xlink:href="#minimize"></use>
+                    </svg>
+                </a>
+                <a title="Maximize" class="btn" href="#">
+                    <svg class="icon">
+                        <use xlink:href="#maximize"></use>
+                    </svg>
+                </a>
+                <a title="Exit" class="btn  close" href="#">
+                    <svg class="icon">
+                        <use xlink:href="#exit"></use>
+                    </svg>
+                </a>
+            </div><!--/.right__icons-->
         </div><!--./header__innerr-->
     </div> <!--./container-->
 </header>
-
 <!-- Main -->
 <div class="main__container">
     <div class="main__nav__container">
@@ -243,53 +247,139 @@
         </div>
     </div> <!--/.main__chat__window-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="details">
-        <div class="message__container">
-            <div class="avatar__container">
-                <a href="#"><img class="avatar__photo" src="assets/img/avatar-1.jpg" alt=""></a>
-            </div>
-            <div class="content__contaner">
-                <div class="name">Ivanov Ivan</div>
-                <div class="time">10:06 AM</div>
-                <p class="message">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum orci id odio maximus posuere. Nulla eget risus euismod purus ornare dignissim. Ut interdum ligula id ultrices facilisis
-                </p>
-                <div class="message__option">
-                    <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-2.jpg" alt=""></a>
-                    <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-3.jpg" alt=""></a>
-                    <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-4.jpg" alt=""></a>
-                    <a class="replies" href="#">3 replies</a>
-                    <div class="reply__info">
-                        <div class="visible__last__reply">
-                            Last reply 3 days ago
-                        </div>
-                        <div class="hidden__view__reply">
-                            View thread
+        <div class="threads__main__message">
+            <div class="message__container">
+                <div class="avatar__container">
+                    <a href="#"><img class="avatar__photo" src="assets/img/avatar-1.jpg" alt=""></a>
+                </div>
+                <div class="content__contaner">
+                    <div class="name">Ivanov Ivan</div>
+                    <div class="time">10:06 AM</div>
+                    <p class="message">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum orci id odio maximus posuere. Nulla eget risus euismod purus ornare dignissim. Ut interdum ligula id ultrices facilisis
+                    </p>
+                    <div class="message__option">
+                        <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-2.jpg" alt=""></a>
+                        <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-3.jpg" alt=""></a>
+                        <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-4.jpg" alt=""></a>
+                        <a class="replies" href="#">3 replies</a>
+                        <div class="reply__info">
+                            <div class="visible__last__reply">
+                                Last reply 3 days ago
+                            </div>
+                            <div class="hidden__view__reply">
+                                View thread
+                            </div>
                         </div>
                     </div>
+                    <div class="hidden__reactions">
+                        <a class="btn" href="#"><i class="far fa-grin fa-lg"></i></a>
+                        <a class="btn" href="#">
+                            <i class="fas fa-hashtag fa-lg"></i>
+                            <i class="fas fa-long-arrow-alt-left"></i>
+                        </a>
+                        <a class="btn" href="#"><i class="fas fa-bookmark fa-lg"></i></a>
+                        <a class="btn" href="#"><i class="fas fa-ellipsis-v fa-lg"></i></a>
+                    </div>
                 </div>
-                <div class="hidden__reactions">
-                    <a class="btn" href="#"><i class="far fa-grin fa-lg"></i></a>
-                    <a class="btn" href="#"><i class="fas fa-bookmark fa-lg"></i></a>
-                    <a class="btn" href="#"><i class="fas fa-ellipsis-v fa-lg"></i></a>
+            </div>
+            <div class="reply__quantity">
+                <span>3 replies</span>
+            </div>
+        </div> <!--/.threads__main__message-->
+        <div class="threads__replies">
+            <div class="message__container">
+                <div class="avatar__container">
+                    <a href="#"><img class="avatar__photo" src="assets/img/avatar-2.jpg" alt=""></a>
+                </div>
+                <div class="content__contaner">
+                    <div class="name">Danilov Danil</div>
+                    <div class="time">12:06 AM</div>
+                    <p class="message">Nulla eget risus euismod purus ornare dignissim. Ut interdum ligula id ultrices facilisis
+                    </p>
+                    <div class="message__option">
+                        <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-2.jpg" alt=""></a>
+                        <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-3.jpg" alt=""></a>
+                        <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-4.jpg" alt=""></a>
+                        <a class="replies" href="#">3 replies</a>
+                        <div class="reply__info">
+                            <div class="visible__last__reply">
+                                Last reply 3 days ago
+                            </div>
+                            <div class="hidden__view__reply">
+                                View thread
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden__reactions">
+                        <a class="btn" href="#"><i class="far fa-grin fa-lg"></i></a>
+                        <a class="btn" href="#"><i class="fas fa-bookmark fa-lg"></i></a>
+                        <a class="btn" href="#"><i class="fas fa-ellipsis-v fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="message__container">
+                <div class="avatar__container">
+                    <a href="#"><img class="avatar__photo" src="assets/img/avatar-3.jpg" alt=""></a>
+                </div>
+                <div class="content__contaner">
+                    <div class="name">Vasiliev Vasya</div>
+                    <div class="time">1:21 PM</div>
+                    <p class="message">Ut interdum ligula id ultrices facilisis
+                    </p>
+                    <div class="message__option">
+                        <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-2.jpg" alt=""></a>
+                        <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-3.jpg" alt=""></a>
+                        <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-4.jpg" alt=""></a>
+                        <a class="replies" href="#">3 replies</a>
+                        <div class="reply__info">
+                            <div class="visible__last__reply">
+                                Last reply 3 days ago
+                            </div>
+                            <div class="hidden__view__reply">
+                                View thread
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden__reactions">
+                        <a class="btn" href="#"><i class="far fa-grin fa-lg"></i></a>
+                        <a class="btn" href="#"><i class="fas fa-bookmark fa-lg"></i></a>
+                        <a class="btn" href="#"><i class="fas fa-ellipsis-v fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="message__container">
+                <div class="avatar__container">
+                    <a href="#"><img class="avatar__photo" src="assets/img/avatar-4.jpg" alt=""></a>
+                </div>
+                <div class="content__contaner">
+                    <div class="name">Malinovskaya Maria</div>
+                    <div class="time">5:02 PM</div>
+                    <p class="message">:)
+                    </p>
+                    <div class="message__option">
+                        <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-2.jpg" alt=""></a>
+                        <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-3.jpg" alt=""></a>
+                        <a class="option" href="#"><img class="avatar__photo avatar__photo--opt" src="assets/img/avatar-4.jpg" alt=""></a>
+                        <a class="replies" href="#">3 replies</a>
+                        <div class="reply__info">
+                            <div class="visible__last__reply">
+                                Last reply 3 days ago
+                            </div>
+                            <div class="hidden__view__reply">
+                                View thread
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden__reactions">
+                        <a class="btn" href="#"><i class="far fa-grin fa-lg"></i></a>
+                        <a class="btn" href="#"><i class="fas fa-bookmark fa-lg"></i></a>
+                        <a class="btn" href="#"><i class="fas fa-ellipsis-v fa-lg"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="reply__quantity"><span>3 replies</span></div> -->
-        <div class="reply__quantity"><span>3 replies</span></div>
     </div>
 </div><!-- /.main__container -->
 
