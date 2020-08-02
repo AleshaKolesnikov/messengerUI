@@ -8,12 +8,23 @@ body{
 }
 *, :before, :after{
     box-sizing: border-box;
-    cursor: default;
-}
-a, p, h5{
     margin: 0;
     padding: 0;
 }
+/* Scrollbar
+========================== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #7d8082;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
 
 /* Fonts
 ========================== */
@@ -21,7 +32,6 @@ a, p, h5{
     padding: 5px;
     font-size: 10px;
 }
-
 
 /* Container
 ========================== */
@@ -94,26 +104,7 @@ border-bottom: 1px solid #2c2f34;
     width: 12px;
     height: 12px;
     padding: 2px;
-    }
-
-.rounded_bg{
-
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    z-index: 1;
-    border: 2px solid #d1d2d3;
-    box-shadow: 0 0 0px 5px #d1d2d3 inset;
-    border-radius: 50%;
 }
-    
-.big__icon{
-    background-color: #d1d2d3;
-    fill: #38373c;
-    width: 25px;
-    height: 20px;
-    }
-
 /* Input
 ========================== */
 
@@ -216,7 +207,7 @@ input[type=search]:focus{
     background-color: inherit;
     color: #d1d2d3;
 }
-/* __navigation INNER
+/* user__information
 ========================== */
 
 .user__information{
@@ -224,6 +215,14 @@ input[type=search]:focus{
     height: 50px;
     border-bottom: 1px solid #2b2a30;
     position: relative;
+}
+.user__information > a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    top: 5px;
+    right: 10px;
 }
 .user__information:hover{
    background-color: #27242c;
@@ -244,8 +243,11 @@ input[type=search]:focus{
     flex: 2 0 50%;
     border-right: 1px solid #2b2a30;
     flex-direction: column;
-    
 }
+.main__chat__window:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+
 
 .message__container{
     display: flex;
@@ -314,6 +316,23 @@ input[type=search]:focus{
     clear: both;
     color: #d1d2d3;
     font-size: 13px;
+}
+.message__img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.message__img >a {
+    min-width: 200px;
+    width: 45%;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.message__img > a > img{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #394246;
+    border-radius: 5px;
 }
 
 .message__option{
