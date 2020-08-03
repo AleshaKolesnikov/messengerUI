@@ -1,6 +1,5 @@
 body{
     margin: 0;
-
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #949297;
@@ -33,20 +32,14 @@ body{
     font-size: 10px;
 }
 
-/* Container
-========================== */
-.container{
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-}
-
 /* Header
 ========================== */
 
 .header{
 padding: 0px 0;
 border-bottom: 1px solid #2c2f34;
+min-height: 40px;
+max-height: 50px;
 }
 
 .header__inner{
@@ -61,6 +54,8 @@ border-bottom: 1px solid #2c2f34;
 }
 .center__icons{
     justify-content: center;
+    align-items: center;
+
     flex: 2 0;
     overflow: visible;
     min-width: 130px;
@@ -80,10 +75,21 @@ border-bottom: 1px solid #2c2f34;
     align-items: center;
     width: 40px;
     height: 40px;
-    transition: background .1s linear;   
 }
 .btn:hover{
-    background-color: #353439;
+    background: #353439;
+}
+.header .btn:hover:not(.standart){
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 5px #121016;
+}
+.main__nav__container .btn:hover{
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 5px #19171d;
+}
+.main__chat .btn:hover, .details .btn:hover{
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 5px #222529;
 }
 .btn.close:hover{
     background-color: red;
@@ -110,10 +116,9 @@ border-bottom: 1px solid #2c2f34;
 
 input{
     flex: 6 1;
-    max-width: 400px;
     min-width: 20px;
-    height: 20px;
-    margin: 10px 0px;
+    margin-left: 20px;
+    padding-left: 10px;
     border: 1px solid #424145;
     border-radius: 4px;
     background-color: #1f1e23;
@@ -134,7 +139,7 @@ input[type=search]:focus{
 .main__container{
     display: flex;
     background-color: #19171d;
-    height: 90vh;
+    height: 94.5vh;
 }
 
 /* main__nav
@@ -147,7 +152,7 @@ input[type=search]:focus{
 
 /* __chat_menu
 ========================== */
-.main__nav__chat_menu{
+.chat__choiser{
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -175,35 +180,35 @@ input[type=search]:focus{
 
 /* __navigation
 ========================== */
-.main__nav__navigation{
+.nav__menu{
     flex: 6 1 80%;
     border-right: 1px solid #2b2a30;
     flex-direction: column;
 }
-.main__nav__navigation a{
+.nav__menu a{
     display: flex;
     text-decoration: none;
     color: inherit;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.main__nav__navigation i{
+.nav__menu i{
     margin: 0px 10px;
     margin-top: 3px;
 }
-.main__nav__navigation a:hover{
+.nav__menu a:hover{
     background-color: #27242c;
     color: #919193;
 }
-.main__nav__navigation .expand:hover{
+.nav__menu .expand:hover{
     background-color: inherit;
     color: #d1d2d3;
 }
-.main__nav__navigation a:focus{
+.nav__menu a:focus{
     background-color: #1164a3;
     color: #ffffff;
 }
-.main__nav__navigation .expand:focus{
+.nav__menu .expand:focus{
     background-color: inherit;
     color: #d1d2d3;
 }
@@ -212,7 +217,7 @@ input[type=search]:focus{
 
 .user__information{
     padding: 10px;
-    height: 50px;
+    height: 80px;
     border-bottom: 1px solid #2b2a30;
     position: relative;
 }
@@ -237,14 +242,29 @@ input[type=search]:focus{
 
 /* main__chat__window
 ========================== */
-.main__chat__window{
+
+.main__chat{
     overflow-y: auto;
     background-color: #1a1d21;
     flex: 2 0 50%;
     border-right: 1px solid #2b2a30;
     flex-direction: column;
 }
-.main__chat__window:hover::-webkit-scrollbar-thumb{
+.main__chat__header{
+    padding: 10px;
+    height: 80px;
+    border-bottom: 1px solid #2b2a30;
+    position: relative;
+}
+
+/* .main__chat__window{
+    overflow-y: auto;
+    background-color: #1a1d21;
+    flex: 2 0 50%;
+    border-right: 1px solid #2b2a30;
+    flex-direction: column;
+} */
+.main__chat:hover::-webkit-scrollbar-thumb{
     visibility: visible;
 }
 
@@ -329,7 +349,6 @@ input[type=search]:focus{
     margin-right: 5px;
 }
 .message__img > a > img{
-    display: inline-block;
     width: 100%;
     border: 1px solid #394246;
     border-radius: 5px;
@@ -421,6 +440,10 @@ input[type=search]:focus{
     background-color: #1a1d21;
     flex: 1 1 25%;
     flex-direction: column;
+    overflow-y: auto;
+}
+.details:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
 }
 
 /* threads__main__message
