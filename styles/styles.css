@@ -141,14 +141,6 @@ input[type=search]:focus{
     outline: none;
 }
 
-/* main__nav
-========================== */
-/* .main__nav__container{
-    display: flex;
-    flex-direction: row;
-    flex: 1 1 25%;
-} */
-
 /* __chat_menu
 ========================== */
 .chat__choiser{
@@ -198,7 +190,7 @@ input[type=search]:focus{
 /* user__inforamtion
 ========================== */
 .user__information{
-    flex: 1 1 25%;
+    flex: 1 2 20%;
     padding: 10px;
     position: relative;
     border-right: 1px solid #2b2a30;
@@ -218,7 +210,7 @@ input[type=search]:focus{
 ========================== */
 
 .channel__information{
-    flex: 2 1 50%;
+    flex: 2 0 55%;
     background-color: #1a1d21;
     border-right: 1px solid #2b2a30;
 }
@@ -227,7 +219,7 @@ input[type=search]:focus{
 ========================== */
 .details__information{
     background-color: #1a1d21;
-    flex: 1 1 25%;
+    flex: 1 1 20%;
 }
 
 /* main__workspace
@@ -235,14 +227,14 @@ input[type=search]:focus{
 .main__workspace{
     display: flex;
     flex-direction: row;
-    flex: 10 1 90%;
+    flex: 10 2 90%;
     height: 85%;
 }
 
 /* __nav__menu
 ========================== */
 .nav__menu{
-    flex: 1 1 25%;
+    flex: 1 2 20%;
     border-right: 1px solid #2b2a30;
     flex-direction: column;
 }
@@ -287,7 +279,7 @@ input[type=search]:focus{
 .main__chat{
     overflow-y: auto;
     background-color: #1a1d21;
-    flex: 2 0 50%;
+    flex: 2 0 55%;
     border-right: 1px solid #2b2a30;
     flex-direction: column;
 }
@@ -465,7 +457,7 @@ input[type=search]:focus{
 ========================== */
 .details{
     background-color: #1a1d21;
-    flex: 1 1 25%;
+    flex: 1 2 20%;
     flex-direction: column;
     overflow-y: auto;
 }
