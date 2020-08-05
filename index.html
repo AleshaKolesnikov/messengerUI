@@ -148,11 +148,9 @@
         </a>
     </div><!-- /.chat__choiser -->
     <div class="main">
-
-
         <div class="main__header">
-            <div class="user__information">
-                <h5>Ais 
+            <div class="user__info">
+                <h5 style="font-size: 1.2em; color: #d1d2d3;">Ais 
                     <span>
                         <svg class="mini__icon">
                             <use xlink:href="#expand"></use>
@@ -161,21 +159,41 @@
                 </h5>
                 <p class="font__mini"><i style="color:#2bac76; font-size: 75%;" class="fas fa-circle"></i>Alexei Kolesnikov</p>
                 <!-- new message icon -->
-                    <a onfocus="this.blur()" class="fa-stack fa-lg" href="#">
-                        <i style="color: #d1d2d3;" class="fas fa-circle fa-stack-2x"></i>
-                        <i style="color: #252328;" class="far fa-edit fa-stack-1x"></i>
+                    <a onfocus="this.blur()" class="btn position_right" href="#">
+                        <i style="color: #d1d2d3; font-size: 3em;" class="fas fa-circle fa-stack-2x"></i>
+                        <i style="color: #252328; font-size: 1.5em;" class="far fa-edit fa-stack-1x"></i>
                     </a>
-            </div><!-- /.user__information-->
-            <div class="channel__information">
-                CHANNEL__INFO
+            </div><!-- /.user__info-->
+            <div class="channel__info">
+                <div class="channel__info__header">
+                    <a href="#">
+                        <span class="icon lock_i">task2</span>
+                    </a>
+                    <a style="padding-top: 0.2em;" href="#"><i class="far fa-star"></i></a>  
+                </div>
+                <!-- info-button -->
+                <a class="btn position_right" href="#">
+                    <i class="far fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-info fa-stack-1x"></i>
+                </a><!-- /.info-button -->
+                <div class="channel__info__footer">
+                    <a class="icon user_i" href="#">200</a>
+                    <a class="icon pinned_i" href="#">2</a>
+                    <a href="#">Add a topic</a>
+                </div>
+            </div><!--/.channel_info-->
+            <div class="details__info">
+                <div class="details__info__header">Thread</div>
+                <a class="btn position_right" href="#">
+                    <i class="fas fa-times"></i>
+                </a>
+                <div class="details__info__footer">
+                    <a href="#">
+                        <span class="icon lock_i">task2</span>
+                    </a>
+                </div>
             </div>
-            <div class="details__information">
-                DETAILS__INFO
-            </div>
-        </div>
-
-
-
+        </div><!--./main__header-->
         <div class="main__workspace">
             <div class="nav__menu">
                 <div class="frequently__search">
@@ -218,10 +236,6 @@
                     </a>
                 </div> <!--/.nav__direct-->
             </div><!-- /.nav__menu -->
-
-
-
-
             <div class="main__chat">
                     <div class="message__container">
                         <div class="avatar__container">
@@ -326,19 +340,7 @@
                             </div>
                         </div>
                     </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
+            </div><!--/.main__Chat-->
             <div class="details">
                 <div class="threads__main__message">
                     <div class="message__container">
@@ -472,34 +474,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-    </div> <!--/.main-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-   
-
-    
+            </div><!--/.details-->
+        </div> <!--/.main__workspace-->
 </div><!-- /.main -->
-
-
     </body>
 </html>

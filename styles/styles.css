@@ -76,12 +76,37 @@ height: 5%;
 /* Buttons and Icons
 ========================== */
 
+.icon::after, .icon::before{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 5px;
+}
+.lock_i::before{
+    font-size: 0.8em;
+    content: "\f023";
+}
+.user_i::before{
+    font-size: 1.2em;
+    content: "\f007";
+}
+.pinned_i::before{
+    content: "\f08d";
+    font-size: 1.2em;
+}
+
 .btn{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
+    text-decoration: none;
+    color: inherit;
 }
 .btn:hover{
     background: #353439;
@@ -94,7 +119,8 @@ height: 5%;
     border-radius: 10px;
     box-shadow: inset 0 0 0 5px #19171d;
 }
-.main__chat .btn:hover, .details .btn:hover{
+.main__chat .btn:hover, .details .btn:hover, .main__header .btn:hover{
+    color: #d1d2d3;
     border-radius: 10px;
     box-shadow: inset 0 0 0 5px #222529;
 }
@@ -117,6 +143,13 @@ height: 5%;
     width: 12px;
     height: 12px;
     padding: 2px;
+}
+.position_right{
+    position: absolute;
+    right: 0%;
+    bottom: 50%;
+    top: 25%;
+    margin-right: 10px;
 }
 /* Input
 ========================== */
@@ -181,47 +214,93 @@ input[type=search]:focus{
 .main__header{
     display: flex;
     flex-direction: row;
-    flex: 1 1 80px;
-    min-height: 80px;
+    flex: 1 1 70px;
+    min-height: 70px;
     border-bottom: 1px solid #2b2a30;
     height: 10%;
 }
 
 /* user__inforamtion
 ========================== */
-.user__information{
+.user__info{
     flex: 1 2 20%;
     padding: 10px;
     position: relative;
     border-right: 1px solid #2b2a30;
 }
-.user__information > a{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    position: absolute;
-    top: 5px;
-    right: 10px;
-}
-.user__information:hover{
+.user__info:hover{
    background-color: #27242c;
 }
-/* channel__information
+/* channel__info
 ========================== */
 
-.channel__information{
+.channel__info{
+    position: relative;
     flex: 2 0 55%;
     background-color: #1a1d21;
     border-right: 1px solid #2b2a30;
 }
-
-/* details__information
+.channel__info__header{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 5px 5px 40px;
+    font-weight: 700;
+    color: #d1d2d3;
+}
+.channel__info__header a{
+    display: flex;
+    text-decoration: none;
+    color: #d1d2d3;
+    padding-right: 10px;
+}
+.channel__info__footer{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+}
+.channel__info__footer a:first-child{
+    padding-left: 0;
+    border: none;
+}
+.channel__info__footer a{
+    display: flex;
+    height: 40%;
+    text-decoration: none;
+    color: inherit;
+    padding: 0px 10px;
+    border-left: 1px solid #d1d2d3;
+}
+.channel__info__footer a:hover{
+    color: #1164a3;
+}
+/* details__info
 ========================== */
-.details__information{
+.details__info{
     background-color: #1a1d21;
     flex: 1 1 20%;
+    position: relative;
 }
-
+.details__info__header{
+    margin: 10px 0px 0px 40px;
+    color: #d1d2d3;
+    font-size: 1.2em;
+}
+.details__info__footer{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+}
+.details__info__footer a{
+    display: flex;
+    height: 40%;
+    text-decoration: none;
+    color: inherit;
+}
+.details__info__footer a:hover{
+    text-decoration: underline;
+}
 /* main__workspace
 ========================== */
 .main__workspace{
