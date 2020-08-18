@@ -636,6 +636,10 @@ input[type=search]:focus{
 /* threads__main__message
 ========================== */
 .threads__main__message{
+    display: flex;
+    min-height: 75px;
+    flex-direction: column;
+    overflow: auto;
 }
 
 .details .message__container{
@@ -659,6 +663,8 @@ input[type=search]:focus{
 /* reply__quantity
 ========================== */
 .reply__quantity{
+    display: flex;
+    min-height: 2em;
     position: relative;
     overflow: hidden;
 }
@@ -680,8 +686,10 @@ input[type=search]:focus{
 /* threads__replies
 ========================== */
 .threads__replies{
+    display: flex;
     overflow-y: auto;
-    min-height: 150px;
+    min-height: 75px;
+    flex-direction: column;
 }
 
 
