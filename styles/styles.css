@@ -39,6 +39,7 @@ padding: 0px 0;
 border-bottom: 1px solid #2c2f34;
 min-height: 40px;
 max-height: 50px;
+min-width: 800px;
 height: 5%;
 }
 
@@ -152,6 +153,31 @@ height: 5%;
     top: 25%;
     margin-right: 10px;
 }
+@media (max-width:1000px){
+    .holding_first_btn{
+        display: none;
+    }
+}
+@media (max-width:800px){
+    .holding_second_btn{
+        display: none;
+    }
+}
+@media (max-width:600px){
+    .holding_third_btn{
+        display: none;
+    }
+}
+.hidden_btn{
+    display: none;
+}
+@media (max-width:1001px){
+    .hidden_btn{
+        display: flex;
+    }
+}
+
+
 /* Input
 ========================== */
 
@@ -180,8 +206,8 @@ input[type=search]:focus{
     display: flex;
     flex: 1 0 20%;
     min-height: 150px;
+    max-height: 200px;
     flex-direction: column;
-    justify-content: space-around;
 }
 .text__input{
     display: flex;
@@ -196,20 +222,26 @@ input[type=search]:focus{
     resize: none;
 }
 .input__options{
-    overflow: auto;
     display: flex;
+    width: 100%;
     justify-content: space-between;
-    width: 90%;
     position: absolute;
-    left: 2em;
-    bottom: 1em;
-    display: flex;
+    left: 3em;
+    bottom: 2em;
+    padding-right: 6em;
     flex: 1 1 100%;
-    margin: 1em;
     border-top: 1px solid #35373b;
 }
-.left__options, .right__options{
+.left__options{
     display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    max-width: 300px;
+}
+.right__options{
+    display: flex;
+    width: 40%;
+    max-width: 100px;
 }
 .left__options, .right__options a{
     margin: 0em;
@@ -278,9 +310,10 @@ input[type=search]:focus{
     height: 10%;
 }
 
-/* user__inforamtion
+/* user__info
 ========================== */
 .user__info{
+    position: relative;
     flex: 1 2 20%;
     padding: 10px;
     position: relative;
@@ -426,6 +459,7 @@ input[type=search]:focus{
     overflow-y: auto;
     flex: 2 2 80%;
     max-height: 80%;
+    min-height: 150px;
     flex-direction: column;
 }
 .chat__messages:hover::-webkit-scrollbar-thumb{
@@ -589,19 +623,19 @@ input[type=search]:focus{
 /* details
 ========================== */
 .details{
+    display: flex;
     background-color: #1a1d21;
     flex: 1 2 20%;
     flex-direction: column;
-    overflow-y: auto;
+    position: relative;
 }
-.details:hover::-webkit-scrollbar-thumb{
+.threads__replies:hover::-webkit-scrollbar-thumb{
     visibility: visible;
 }
 
 /* threads__main__message
 ========================== */
 .threads__main__message{
-
 }
 
 .details .message__container{
@@ -645,6 +679,9 @@ input[type=search]:focus{
 
 /* threads__replies
 ========================== */
-
+.threads__replies{
+    overflow-y: auto;
+    min-height: 150px;
+}
 
 
